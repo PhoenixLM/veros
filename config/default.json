@@ -2,5 +2,16 @@
     "Server": {
         "host": "localhost",
         "port": 3000
+    },
+
+    "Mongo": {
+        "host": "localhost",
+        "port": 27017,
+        "db": "test"
+    },
+
+    "Secrets": {
+        "salt": 89098,
+        "session": "Remember to change this in production"
     }
 }

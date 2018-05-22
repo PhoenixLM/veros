@@ -1,6 +1,9 @@
 const User = require('../models/User');
 
 module.exports = (app) => {
+    
+    // API
+
     app.get('/user&:id&:email', (req, res, next) => {
         var query = {role: 0};
         if(req.params.id !== 'all') {
@@ -48,5 +51,19 @@ module.exports = (app) => {
             if(err) return next(err);
             res.json({dropped: req.body._id});
         });
+    });
+
+    // Views
+
+    app.get('/user/arquivo', (req, res, next) => {
+        res.render('User/arquivo');
+    });
+
+    app.get('/user/pagamento', (req, res, next) => {
+        res.render('User/pagamento');
+    });
+
+    app.get('/user/painel', (req, res, next) => {
+        res.render('User/painel');
     });
 }

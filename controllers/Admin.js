@@ -1,6 +1,9 @@
 const User = require('../models/User');
 
 module.exports = (app) => {
+
+    // API
+
     app.get('/admin&:id&:email', (req, res, next) => {
         var query = {role: 2};
         if(req.params.id !== 'all') {
@@ -48,5 +51,27 @@ module.exports = (app) => {
             if(err) return next(err);
             res.json({dropped: req.body._id});
         });
+    });
+
+    // Views
+
+    app.get('/admin/new', (req, res, next) => {
+        res.render('Admin/admin-form');
+    });
+
+    app.get('/admin/clientes', (req, res, next) => {
+        res.render('Admin/clientes');
+    });
+
+    app.get('/admin/new/consultor', (req, res, next) => {
+        res.render('Admin/consultor-form');
+    });
+
+    app.get('/admin/consultores', (req, res, next) => {
+        res.render('Admin/consultores');
+    });
+
+    app.get('/admin/painel', (req, res, next) => {
+        res.render('Admin/painel');
     });
 }

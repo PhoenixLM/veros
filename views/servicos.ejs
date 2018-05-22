@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <% include ./includes/header.ejs %>
+</head>
+
+<body>
+    <% include ./includes/navbar.ejs %>
+        <div class="bg-img main-container" style="background-image: url('/img/2.jpg'); padding-left: 10px; padding-right: 10px">
+            <h1 class="display-3" style="color: #ff5722;">NOSSOS <br> PRODUTOS</h1>
+        </div>
+
+        <div class="main-container">
+            <h1 class="display-4">O que podemos fazer por você?</h1>
+            <p>Aliquam pretium, nisi vitae congue consectetur, ligula mauris viverra dolor, in efficitur est augue et felis.
+                Vivamus condimentum et ante ut pharetra. Fusce ac quam non elit semper dignissim vel in nibh. Nunc vehicula
+                sem ac purus convallis, non pellentesque justo malesuada. Praesent id erat id elit auctor rhoncus sed quis
+                est.
+            </p>
+        </div>
+
+
+        <div class="d-flex flex-row justify-content-center pad-div">
+
+            <div class="view overlay zoom">
+                <img src="/img/bussiness.jpg" class="img-fluid " alt="zoom">
+                <div class="mask flex-center waves-effect waves-light">
+                    <a href="/produto">
+                        <h1 class="font-weight-bold" style="color: #ff5722">PRODUTO 1</h1>
+                    </a>
+                </div>
+            </div>
+
+            <div class="view overlay zoom">
+                <img src="/img/bussiness2.jpg" class="img-fluid " alt="zoom">
+                <div class="mask flex-center waves-effect waves-light">
+                    <a href="/produto">
+                        <h1 class="font-weight-bold" style="color: #ff5722">PRODUTO 2</h1>
+                    </a>
+                </div>
+            </div>
+
+            <div class="view overlay zoom">
+                <img src="/img/bussiness3.jpg" class="img-fluid " alt="zoom">
+                <div class="mask flex-center waves-effect waves-light">
+                    <a href="/produto">
+                        <h1 class="font-weight-bold" style="color: #ff5722">PRODUTO 3</h1>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <% include ./includes/footer.ejs %>
+</body>
+
+</html>

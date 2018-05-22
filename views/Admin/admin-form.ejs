@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <!-- Title Page-->
+    <title>Forms</title>
+
+    <% include ../includes/headerPainel.ejs %>
+
+</head>
+
+<body class="animsition">
+    <div class="page-wrapper">
+        <!-- HEADER MOBILE-->
+        <header class="header-mobile d-block d-lg-none">
+            <div class="header-mobile__bar">
+                <div class="container-fluid">
+                    <div class="header-mobile-inner">
+                        <a class="logo" href="index.html">
+                            <img src="images/icon/logo.png" alt="CoolAdmin" />
+                        </a>
+                        <button class="hamburger hamburger--slider" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar-mobile">
+                <div class="container-fluid">
+                    <ul class="navbar-mobile__list list-unstyled">
+                        <li class="has-sub">
+                            <a class="js-arrow" href="/admin/clientes">
+                              <i class="fas fa-tachometer-alt"></i>Tabela Clientes</a>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/admin/consultor-form">
+                                <i class="fas fa-chart-bar"></i>Cadastrar consultor</a>
+                        </li>
+                        <li>
+                            <a href="/admin/consultores">
+                                <i class="fas fa-table"></i>Tabela Consultores</a>
+                        </li>
+                        <li>
+                            <a href="/admin/new">
+                                <i class="far fa-check-square"></i>Cadastrar administradores</a>
+                        </li>
+                       
+                </div>
+            </nav>
+        </header>
+        <!-- END HEADER MOBILE-->
+
+        <!-- MENU SIDEBAR-->
+
+        <% include ../includes/sidebarAdmin.ejs %>
+        <!-- PAGE CONTAINER-->
+        <div class="page-container">
+      <% include ../includes/headerAdmin.ejs %>
+
+
+            <!-- MAIN CONTENT-->
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="row">
+                                <div class="col-lg-6">
+                                        <div class="card">
+                                            <div class="card-header">Example Form</div>
+                                            <div class="card-body card-block">
+                                                <form action="" method="post" class="">
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <input type="text" id="username2" name="username2" placeholder="Username" class="form-control">
+                                                            <div class="input-group-addon">
+                                                                <i class="fa fa-user"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <input type="email" id="email2" name="email2" placeholder="Email" class="form-control">
+                                                            <div class="input-group-addon">
+                                                                <i class="fa fa-envelope"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <input type="password" id="password2" name="password2" placeholder="Password" class="form-control">
+                                                            <div class="input-group-addon">
+                                                                <i class="fa fa-asterisk"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-actions form-group">
+                                                        <button type="submit" class="btn btn-secondary btn-sm">Submit</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <% include ../includes/scriptPainel.ejs %>
+
+</body>
+
+</html>
+<!-- end document-->

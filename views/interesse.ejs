@@ -32,47 +32,109 @@
 
 	<div class="container-contact100">
 		<div class="wrap-contact100">
-			<form class="contact100-form validate-form">
+			<form class="contact100-form validate-form" method="POST">
 				<span class="contact100-form-title">
 					Formulário de interesse
 				</span>
 
 
-				<div class="wrap-input100 validate-input" data-validate="Name is required">
-					<label class="label-input100" for="name">Nome Completo</label>
-					<input id="name" class="input100" type="text" name="name" placeholder="Seu nome completo...">
+				<div class="wrap-input100 validate-input" data-validate="Preencha seu nome">
+					<label class="label-input100" for="name">Nome</label>
+					<input id="name" class="input100" type="text" name="name" placeholder="Seu nome">
 					<span class="focus-input100"></span>
 				</div>
 
 
-				<div class="wrap-input100 validate-input" data-validate = "Email incorreto, tente algo como: ex@abc.xyz">
-					<label class="label-input100" for="email">Email</label>
-					<input id="email" class="input100" type="text" name="email" placeholder="Seu email...">
+				<div class="wrap-input100 validate-input" data-validate = "Não se esqueça do @">
+					<label class="label-input100" for="email">Endereço de email</label>
+					<input id="email" class="input100" type="text" name="email" placeholder="Seuemail@exemplo.com">
 					<span class="focus-input100"></span>
 				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Preencha seu celular">
+						<label class="label-input100" for="telefone">Celular</label>
+						<input id="phone" class="telefone input100" type="text" name="telefone" placeholder="Seu telefone celular">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Ex: Brasília">
+							<label class="label-input100" for="cidade">Cidade</label>
+							<input id="cidade" class="input100" type="text" name="cidade" placeholder="O nome da sua cidade">
+							<span class="focus-input100"></span>
+						</div>
 
 				<div class="wrap-input100">
-					<div class="label-input100">teste123</div>
+					<div class="label-input100">Qual o seu maior desafio?</div>
 					<div>
-						<select class="js-select2" name="service">
-							<option>123</option>
-							<option>123</option>
-							<option>123</option>
-							<option>123</option>
+						<select class="js-select2" name="desafio">
+							<option value="Falta de tempo para cuidar das finanças">Falta de tempo para cuidar das finanças</option>
+							<option value="Escolha do melhor investimento">Escolha do melhor investimento</option>
+							<option value="Escolha do seguro correto">Escolha do seguro correto</option>
+							<option value="Aposentadoria">Aposentadoria</option>
+							<option value="Acumular Patromônio">Acumular Patromônio</option>
+							<option value="Proteção do Patromônio">Proteção do Patromônio</option>
+							<option value="Atingir Objetivos">Atingir Objetivos</option>
+							<option value="Sair das Dívidas">Sair das dívidas</option>
+							<option value="Nenhum dos anteriores">Nenhum dos anteriores</option>
 						</select>
 						<div class="dropDownSelect2"></div>
 					</div>
 					<span class="focus-input100"></span>
 				</div>
 
-				<div class="wrap-input100 validate-input" data-validate = "Message is required">
-					<label class="label-input100" for="message">Mensagem</label>
-					<textarea id="message" class="input100" name="message" placeholder="Escreva sua mensagem aqui..."></textarea>
+				<div class="wrap-input100">
+						<div class="label-input100">Renda Mensal</div>
+						<div>
+							<select class="js-select2" name="renda">
+							<option value="Até R$ 5,000">Até R$ 5,000</option>
+							<option value="Entre R$ 5,000 e 10,000">Entre R$ 5,000 e 10,000</option>
+							<option value="Entre R$ 10,000 e 20,000">Entre R$ 10,000 e 20,000</option>
+							<option value="Acima de R$ 20,000">Acima de R$ 20,000</option>
+							</select>
+							<div class="dropDownSelect2"></div>
+						</div>
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100">
+							<div class="label-input100">Qual sua profissão?</div>
+							<div>
+								<select class="js-select2" name="profissao">
+								<option value="Empressário">Empressário</option>
+								<option value="Atleta">Atleta</option>
+								<option value="Médico">Médico</option>
+								<option value="Profissional Liberal/Autônomo">Profissional Liberal/Autônomo</option>
+								<option value="Funcionário de Empresa Privada">Funcionário de Empresa Privada</option>
+								<option value="Funcinário Público">Funcinário Público</option>
+								<option value="Aposentado/Vive com renda de patrimônio">Aposentado/Vive com renda de patrimônio</option>
+							
+								</select>
+								<div class="dropDownSelect2"></div>
+							</div>
+							<span class="focus-input100"></span>
+						</div>
+
+						<div class="wrap-input100">
+								<div class="label-input100">Qual o melhor horário para entrarmos em contato?</div>
+								<div>
+									<select class="js-select2" name="hora">
+									<option value="Entre 09:00 e 12:00 ">Entre 09:00 e 12:00 </option>
+									<option value="Entre 12:00 e 14:00">Entre 12:00 e 14:00</option>
+									<option value="Entre 14:00 e 18:00">Entre 14:00 e 18:00</option>
+									</select>
+									<div class="dropDownSelect2"></div>
+								</div>
+								<span class="focus-input100"></span>
+							</div>
+
+				<div class="wrap-input100">
+					<label class="label-input100" for="message">Observação</label>
+					<textarea id="message" class="input100" name="message" placeholder="Deixe uma mensagem/observação aqui..."></textarea>
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="container-contact100-form-btn">
-					<button class="contact100-form-btn">
+					<button class="contact100-form-btn" type="submit">
 						Enviar
 					</button>
 				</div>
@@ -144,6 +206,24 @@
 	  gtag('js', new Date());
 
 	  gtag('config', 'UA-23581568-13');
+	</script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+	<script>
+	jQuery("input.telefone")
+        .mask("(99) 9999-9999?9")
+        .focusout(function (event) {  
+            var target, phone, element;  
+            target = (event.currentTarget) ? event.currentTarget : event.srcElement;  
+            phone = target.value.replace(/\D/g, '');
+            element = $(target);  
+            element.unmask();  
+            if(phone.length > 10) {  
+                element.mask("(99) 99999-999?9");  
+            } else {  
+                element.mask("(99) 9999-9999?9");  
+            }  
+        });
 	</script>
 </body>
 </html>

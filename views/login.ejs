@@ -1,19 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Veros Consultoria</title>
-  <% include ./includes/header.ejs %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <% include ./includes/header.ejs %>
 </head>
-
+    <% include ./includes/styleLogin.ejs %>
 <body>
-    <% include ./includes/navbar.ejs %>
-
-
-  
+ <nav class="navbar">
+   <a href="/"><button class="btn btn-primary">Voltar</button></a>
+ </nav>
+       <div class="login-wrapper">
+                <div class="login-left">
+                  <img src="http://s1.1zoom.me/b5661/490/Winter_Sunrises_and_sunsets_Snow_Sun_544051_800x600.jpg">
+                  <div class="h1">LOGIN VEROS</div>
+                </div>
+                <div class="login-right">
+                  <form>
+        <p class="h4 text-center mb-4">Login</p>
+    
+        <!-- Material input email -->
+        <div class="md-form">
+                <i class="fa fa-envelope prefix grey-text"></i>
+                <input type="email" id="materialFormLoginEmailEx" class="form-control" placeholder="Seu email">
                 
+            </div>
+        
+            <!-- Material input password -->
+            <div class="md-form">
+                <i class="fa fa-lock prefix grey-text"></i>
+                <input type="password" id="materialFormLoginPasswordEx" class="form-control" placeholder="Sua senha">
+               
+            </div>
+        
+            <div class="text-center mt-4">
+                <a href="/forget-pass">Esqueci minha senha</a>
+                <br/>
+                <br/>
+                <button class="btn btn-default" type="submit" style="margin-left:30%">Entrar</button>
+            </div>
+        </form>
+                </div>
+              </div> 
+              
+
+                          
 </body>
+<script>
+    var openLoginRight = document.querySelector('.h1');
+var loginWrapper = document.querySelector('.login-wrapper');
+
+openLoginRight.addEventListener('click', function(){
+  loginWrapper.classList.toggle('open'); 
+});
+</script>
 </html>

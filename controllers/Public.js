@@ -13,5 +13,9 @@ module.exports = (app) => {
 
     app.get('/produto', (req, res, next) => {
         res.render('produto');
-    })
+    });
+
+    app.get('/login', (req, res, next) => {
+        res.render('login');
+    });
 }

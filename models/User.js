@@ -15,6 +15,20 @@ userSchema = new Schema({
     password: {
         type: String,
         required: true
+    },
+
+    // 0 - Usuário comum
+    // 1 - Consultor
+    // 2 - Admin
+    role: {
+        type: Number,
+        required: true
+    }
+
+}, {
+    timestamps: {
+        createdAt: 'created_at',
+        updatedAt: 'updated_at'
     }
 });
 
